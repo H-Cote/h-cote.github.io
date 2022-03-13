@@ -8,6 +8,212 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:    Project Name
+Version:    1.0
+Last change:    24/03/17 [fixed Float bug, vf]
+Author Name: Author Name
+Primary use:    Project Type
+-------------------------------------------------------------------*/
+
+
+/*------------------------------------------------------------------
+
+-------------------------------------------------------------------*/
+@font-face{
+    font-family: raleway;
+    src: url(../fonts/raleway.medium.ttf);
+}
+/*
+==========================================
+    Reset Css
+==========================================
+*/
+html,body{
+    height: 100%;
+    font-family:raleway, sans-serif;
+    scroll-behavior: smooth;
+}
+.section-padding {
+    padding: 80px 0px;
+}
+/*
+==========================================
+    Header Area
+==========================================
+*/
+
+.section-header h2{
+    font-size: 36pt;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.section-header h2 span{
+    color: #ff0000;
+}
+.content-top-space{
+    margin-top: 70px;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+.header-main{
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+}
+.header-main::after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #0e0d0d99;
+    opacity: 0.49;
+    z-index: -1;
+}
+button.navbar-toggler{
+    color: #fff;
+    font-size: 35px;
+}
+.main-menu{
+    background: #1d67c2;
+}
+
+.main-menu ul li{
+    float: left;
+    margin-left: 26px;
+    font-family: sans-serif;
+    text-align: center;
+}
+.main-menu ul li a{
+    display: inline-block;
+    color: #1d67c2;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: raleway;
+    font-weight: 500;
+}
+.main-menu ul li a:hover{
+    color: red;
+}
+.header-img{
+    background: url('../../img/heroArea.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height:100%;
+    position: relative;
+    z-index: 1;
+}
+.header-img::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#252525;
+    opacity: 0.42;
+    z-index: -1;
+}
+.d-table{
+    display: table;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+.d-table-cell{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+}
+.header-img ,.container ,.row ,.col-md-12{
+    height: 100%;
+}
+.header-content {
+    color: white;
+    margin-top: 95px;
+
+}
+.header-content h1 {
+    font-size: 60px;
+    font-family: raleway;
+    font-weight: 500;
+}
+.header-content h1 span{
+    color: #ff0000;
+    font-weight: 700;
+}
+.header-content p{
+    width: 94%;
+    margin: 40px auto 50px auto;
+    font-family: raleway;
+    font-weight: 400;
+    line-height: 24px;
+
+}
+
+.header-content a{
+    text-decoration: none;
+    color: #fff;
+    background: #ff0000;
+    padding: 10px 32px;
+    display: inline-block;
+    font-size: 20px;
+    font-family: raleway;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.header-content a:hover{
+    color: #ff0000;
+    background: #fff;
+}
+.section-header h2{
+    position: relative;
+    font-family: raleway;
+    font-weight: 400;
+}
+.section-header h2:after {
+    position: absolute;
+    content: "";
+    width: 156px;
+    height: 1px;
+    background: #ff0000;
+    top: 100%;
+    left: 50%;
+    margin-left: -78px;
+    margin-top: 20px;
+}
+.section-header h2::before{
+    content: '';
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #ff0000;
+    border-radius: 50%;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: 12px;
+}
+
 body {
     margin: 0;
     padding: 0;
